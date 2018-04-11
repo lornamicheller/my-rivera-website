@@ -1,0 +1,547 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* base style */
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: black;
+}
+
+body>* {
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+}
+
+/* container */
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brand {
+  margin-right: 290px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.menu {
+  font-size: 10px;
+  font-weight: 800;
+  margin-left: 10px;
+  margin-right: 10px;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+.shop {
+  border: 2px solid;
+  border-color: black;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 800;
+  margin-top: 400px;
+  margin-left: 450px;
+  width: 90px;
+  padding: 10px;
+  color: white;
+}
+
+.necklacebutton {
+  font-size: 10px;
+  font-weight: 800;
+  border: 1px solid;
+  border: white;
+  margin-top: 550px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: white;
+  height: 20px;
+  padding: 3px;
+}
+
+.earringsbutton {
+  font-size: 10px;
+  font-weight: 800;
+  border: 1px solid;
+  border-color: white;
+  background-color: white;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  margin-top: 260px;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.braceletbutton {
+  font-size: 10px;
+  font-weight: 800;
+  border: 1px solid;
+  border-color: white;
+  background-color: white;
+  height: 20px;
+  width: 85px;
+  text-align: center;
+  margin-top: 250px;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.collection {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+  color: gray;
+  text-align: center;
+}
+
+.sidebar,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* container style */
+
+.primarycontainer {
+  padding-top: 5px;
+  border-bottom: 1px solid;
+  border-color: white;
+  height: 600px;
+  background-image: url("..images/headerimg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.secondarycontainer {
+  display: flex;
+}
+
+.leftsection {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  width: 700px;
+  background-image: url("..images/firstsection.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid;
+  border-color: white;
+}
+
+.firstbox {
+  display: flex;
+  flex-direction: column;
+  border-top: 5px solid;
+  border-color: white;
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/earringssec.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.secondbox {
+  display: flex;
+  flex-direction: column;
+  border-color: white;
+  width: 300px;
+  height: 300px;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-color: white;
+  background-image: url("..images/bracesec.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.thirdcontainer {
+  border: 1px solid;
+  border-color: white;
+  height: 400px;
+  padding: 100px;
+}
+
+.socialmedia {
+  border: 1px solid;
+  height: 70px;
+  background-color: black;
+}
+
+/* necklaces sheet style */
+
+.shopcontainer {
+  width: 1000px;
+  border-bottom: 1px solid;
+  border-color:black;
+  padding-top: 5px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+}
+
+.jewelrycontainer {
+  display: flex;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftbar {
+  width: 200px;
+  border-right: 1px solid;
+}
+
+.rightbar {
+  width: 800px;
+  min-height: 900px;
+}
+
+.firstline {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+}
+
+.secondline {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+}
+
+.thirdline {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+}
+
+.fourthline {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+}
+
+.box1 {
+  background-image: url("..images/necklaacessec.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box2 {
+  background-image: url("..images/_DSC1705.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box3 {
+  background-image: url("..images/_DSC1930.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box4 {
+  background-image: url("..images/_DSC1750.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box5 {
+  background-image: url("..images/_DSC1832.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box6 {
+  background-image: url("..images/_DSC1792.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box7 {
+  background-image: url("..images/_DSC0203.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box8 {
+  background-image: url("..images/_DSC9340.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+/* earrings sheet style */
+
+.box9 {
+  background-image: url("..images/_DSC0801.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box10 {
+  background-image: url("..images/_DSC7610.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box11 {
+  background-image: url("..images/_DSC9457.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box12 {
+  background-image: url("..images/_DSC8723.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box13 {
+  background-image: url("..images/_DSC1519.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box14 {
+  background-image: url("..images/_DSC1217.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box15 {
+  background-image: url("..images/_DSC0801.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box16 {
+  background-image: url("..images/_DSC0698.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box17 {
+  background-image: url("..images/_DSC0569.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box18 {
+  background-image: url("..images/_DSC0451.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+/* bracelet style sheet */
+
+.box19 {
+  background-image: url("..images/_DSC0512.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box20 {
+  background-image: url("..images/_DSC0877.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box21 {
+  background-image: url("..images/bracesec.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box22 {
+  background-image: url("..images/_DSC1998.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box23 {
+  background-image: url("..images/_DSC8178.png");
+  background-size:cover;
+  background-position: center;
+  margin: 20px 50px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
