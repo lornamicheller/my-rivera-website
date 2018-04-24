@@ -21,11 +21,6 @@ body>* {
   background-color: white;
 }
 
-.parallax {
-  display: table;
-  background-attachment: fixed;
-}
-
 /* container */
 
 a {
@@ -74,15 +69,16 @@ a:active {
 
 .shop {
   border: 2px solid;
-  border-color: black;
+  border-color: white;
+  background-color: white;
   text-align: center;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 800;
   margin-top: 400px;
   margin-left: 665px;
   width: 90px;
   padding: 10px;
-  color: white;
+  color: black;
 }
 
 .necklacebutton {
@@ -96,7 +92,7 @@ a:active {
   background-color: white;
   height: 20px;
   width: 100px;
-  padding: 3px;
+  padding: 2px;
 }
 
 .earringsbutton {
@@ -155,9 +151,9 @@ h5 {
 /* container style */
 
 .shoplistcontainer {
-  padding-top: 10px;
-  border-bottom: 1px solid;
+  border: 1px solid;
   border-color: white;
+  padding-top: 10px;
   height: 90px;
   width: 100%;
   background-color: white;
@@ -221,7 +217,6 @@ h5 {
   padding: 100px;
   display: table;
   background-attachment: fixed;
-  text-align: center;
 }
 
 .shopcollection {
@@ -235,17 +230,39 @@ h5 {
 
 .shopcollectionbutton {
   margin-top: 250px;
-  margin-left: 500px;
-  font-family: 'Satisfy', cursive;
+  margin-left: 450px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
   font-size: 70px;
+  letter-spacing: 5px;
   color: white;
 
 }
 
+.salecontainer {
+  height: 600px;
+  width: 100%;
+  background-image: url("../images/_DSC6595.png");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+.salebutton {
+  margin-top: 250px;
+  margin-left: 650px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+  letter-spacing: 5px;
+  color: white;
+}
+
 .socialmedia {
   border: 1px solid;
+  border-color: white;
   height: 70px;
-  background-color: black;
+  background-color: white;
 }
 
 /* necklaces sheet style */
