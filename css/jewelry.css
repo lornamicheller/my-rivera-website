@@ -16,9 +16,14 @@ body {
 }
 
 body>* {
-  max-width: 1000px;
+  max-width: 2000px;
   margin: auto;
   background-color: white;
+}
+
+.parallax {
+  display: table;
+  background-attachment: fixed;
 }
 
 /* container */
@@ -33,7 +38,7 @@ nav ul {
 }
 
 .brand {
-  margin-right: 290px;
+  margin-right: 500px;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 3px;
@@ -74,7 +79,7 @@ a:active {
   font-size: 9px;
   font-weight: 800;
   margin-top: 400px;
-  margin-left: 450px;
+  margin-left: 665px;
   width: 90px;
   padding: 10px;
   color: white;
@@ -90,6 +95,7 @@ a:active {
   text-align: center;
   background-color: white;
   height: 20px;
+  width: 100px;
   padding: 3px;
 }
 
@@ -148,14 +154,22 @@ h5 {
 
 /* container style */
 
-.primarycontainer {
-  padding-top: 5px;
+.shoplistcontainer {
+  padding-top: 10px;
   border-bottom: 1px solid;
   border-color: white;
+  height: 90px;
+  width: 100%;
+  background-color: white;
+}
+
+.maincontainer {
   height: 600px;
+  width: 100%;
   background-image: url("../images/headerimg.png");
   background-size: cover;
-  background-position: center;
+  display: table;
+  background-attachment: fixed;
 }
 
 .secondarycontainer {
@@ -163,7 +177,6 @@ h5 {
 }
 
 .leftsection {
-  display: flex;
   flex-direction: row;
   height: 600px;
   width: 700px;
@@ -179,7 +192,7 @@ h5 {
   flex-direction: column;
   border-top: 5px solid;
   border-color: white;
-  width: 300px;
+  width: 715px;
   height: 300px;
   background-image: url("../images/earringssec.png");
   background-size: cover;
@@ -190,7 +203,7 @@ h5 {
   display: flex;
   flex-direction: column;
   border-color: white;
-  width: 300px;
+  width: 715px;
   height: 300px;
   border-top: 5px solid;
   border-bottom: 5px solid;
@@ -203,8 +216,30 @@ h5 {
 .thirdcontainer {
   border: 1px solid;
   border-color: white;
-  height: 400px;
+  height: 50vh;
+  width: 100%;
   padding: 100px;
+  display: table;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.shopcollection {
+  height: 600px;
+  width: 100%;
+  background-image: url("../images/_DSC7820.png");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+.shopcollectionbutton {
+  margin-top: 250px;
+  margin-left: 500px;
+  font-family: 'Satisfy', cursive;
+  font-size: 70px;
+  color: white;
+
 }
 
 .socialmedia {
