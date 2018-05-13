@@ -11,60 +11,28 @@ html {
 /* base style */
 
 body {
-  font-family: 'Nanum Gothic', sans-serif;
-  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
 }
 
 body>* {
-  max-width: 2000px;
+  max-width: 1000px;
   margin: auto;
   background-color: white;
 }
 
 /* container */
 
+#main {
+  top: 0;
+}
+
 a {
   text-decoration: none;
 }
 
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.brand {
-  margin-right: 500px;
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: 3px;
-}
-
-.menu {
-  font-size: 10px;
-  font-weight: 800;
-  margin-left: 10px;
-  margin-right: 10px;
-  letter-spacing: 2px;
-}
-
 ul {
   list-style-type: none;
-}
-
-a:hover {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:link {
-  color: black;
-}
-
-a:active {
-  color: black;
 }
 
 .shop {
@@ -75,7 +43,7 @@ a:active {
   font-size: 10px;
   font-weight: 800;
   margin-top: 400px;
-  margin-left: 665px;
+  margin-left: 455px;
   width: 90px;
   padding: 10px;
   color: black;
@@ -236,7 +204,6 @@ h5 {
   font-size: 70px;
   letter-spacing: 5px;
   color: white;
-
 }
 
 .salecontainer {
@@ -265,335 +232,376 @@ h5 {
   background-color: white;
 }
 
-/* necklaces sheet style */
+.secondbar {
+  display: flex;
+}
 
-.shopcontainer {
-  width: 1000px;
-  border-bottom: 1px solid;
-  border-color:black;
-  padding-top: 5px;
+.secondlist {
+  flex-direction: row;
+  border: 1px solid;
+  font-size: 10px;
+  font-weight: 600;
+  color: gray;
+  height: 50px;
+  width: 500px;
+}
+
+.seconbarcontainer {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
   height: 70px;
-  background-size: cover;
-  background-position: center;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: 218px;
+  text-align: center;
+  position: fixed;
+  top: 0;
 }
 
-.jewelrycontainer {
+.rightnavbar a {
+  font-size: 12px;
+  font-weight: 300;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 7px;
+  padding-left: 3px;
+}
+
+.rightnavbar {
   display: flex;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 150px;
 }
 
-.leftbar {
-  width: 200px;
-  border-right: 1px solid;
+#logo {
+  margin-left: 200px;
+  font-size: 25px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 3px;
 }
 
-.rightbar {
-  width: 800px;
-  min-height: 900px;
+input[type=text]#search {
+  border: 0px;
+  padding-top: 5px;
+  padding-left: 40px;
+  outline: none;
+  width: 120px;
+  font-size: 12px;
+  color: black;
 }
 
-.firstline {
+#search {
+  color: black;
+}
+
+input[type=text]:focus {
+  width: 220px;
+}
+
+.navshop {
+  padding-top: 400px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#items {
+  color: gray;
+  font-size: 10px;
+  margin-left: 30px;
+}
+
+.leftnavbar {
   display: flex;
-  flex-direction: row;
-  width: 1000px;
 }
 
-.secondline {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
+.leftnavbar a {
+  font-size: 12px;
+  font-weight: 300;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 7px;
+  padding-right: 10px;
 }
 
-.thirdline {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
+.arrow-up {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgba(0, 0, 0, 0.482);
+  right: 206px;
+  top: 47px;
+  display: none;
 }
 
-.fourthline {
+.sign-in-form {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  background: white;
+  right: 78px;
+  top: 67px;
+  border-radius: 7px;
+  border-bottom: 5px solid gray;
+  display: none;
+}
+
+.sign-in-form label {
+  display: none;
+}
+
+.sign-in-form>form {
+  width: 250px;
+  margin: 25px auto;
+  font-size: 12px;
+  color: gray;
+  letter-spacing: 1px;
+}
+
+.sign-in-form h5 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+input[type="text"]#email,
+input[type="password"]#password {
+  width: 250px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: gray;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background: white;
+  font-weight: bold;
+  margin-bottom: 9px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: rgba(0, 0, 0, 0.482);
+  font-size: 12px;
+  font-weight: 300;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.createaccount {
+  margin-top: 7px;
+}
+
+
+/* necklaces sheet */
+
+.contentcontainer {
   display: flex;
-  flex-direction: row;
-  width: 1000px;
+  margin-left: 20px;
 }
 
 .box1 {
-  background-image: url("../images/necklaacessec.png");
-  background-size:cover;
+  background-image: url("../images/_DSC0203.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  margin-left: 150px;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  flex-direction: row;
+  height: 500px;
+  width: 650px;
 }
 
 .box2 {
   background-image: url("../images/_DSC1705.png");
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
 }
 
 .box3 {
   background-image: url("../images/_DSC1930.png");
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
+}
+
+.contentcontainer2 {
+  display: flex;
+  margin: 0;
 }
 
 .box4 {
-  background-image: url("../images/_DSC1750.png");
-  background-size:cover;
+  background-image: url("../images/_DSC0716.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
+  margin-left: 170px;
 }
 
 .box5 {
   background-image: url("../images/_DSC1832.png");
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
+  margin-left: 170px;
 }
 
 .box6 {
-  background-image: url("../images/_DSC1792.png");
-  background-size:cover;
+  background-image: url("../images/_DSC8768.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  flex-direction: row;
+  height: 500px;
+  width: 650px;
 }
 
+/* earrings sheet */
+
 .box7 {
-  background-image: url("../images/_DSC0203.png");
-  background-size:cover;
+  background-image: url("../images/_DSC7610.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  margin-left: 150px;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  flex-direction: row;
+  height: 500px;
+  width: 650px;
 }
 
 .box8 {
-  background-image: url("../images/_DSC9340.png");
-  background-size:cover;
+  background-image: url("../images/_DSC0801.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
 }
 
-/* earrings sheet style */
-
 .box9 {
-  background-image: url("../images/_DSC0801.png");
-  background-size:cover;
+  background-image: url("../images/_DSC9457.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
 }
 
 .box10 {
-  background-image: url("../images/_DSC7610.png");
-  background-size:cover;
+  background-image: url("../images/_DSC1217.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
+  margin-left: 170px;
 }
 
 .box11 {
-  background-image: url("../images/_DSC9457.png");
-  background-size:cover;
+  background-image: url("../images/_DSC0506.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
+  margin-left: 170px;
 }
 
 .box12 {
   background-image: url("../images/_DSC8723.png");
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  flex-direction: row;
+  height: 500px;
+  width: 650px;
 }
 
+/* bracelets */
+
 .box13 {
-  background-image: url("../images/_DSC1519.png");
-  background-size:cover;
+  background-image: url("../images/_DSC1998.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  margin-left: 150px;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  flex-direction: row;
+  height: 500px;
+  width: 650px;
 }
 
 .box14 {
-  background-image: url("../images/_DSC1217.png");
-  background-size:cover;
+  background-image: url("../images/_DSC0512.png");
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
 }
 
 .box15 {
-  background-image: url("../images/_DSC0801.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.box16 {
-  background-image: url("../images/_DSC0698.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.box17 {
-  background-image: url("../images/_DSC0569.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.box18 {
-  background-image: url("../images/_DSC0451.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-/* bracelet style sheet */
-
-.box19 {
-  background-image: url("../images/_DSC0512.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.box20 {
   background-image: url("../images/_DSC0877.png");
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
+  border: 10px solid;
   border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.box21 {
-  background-image: url("../images/bracesec.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.box22 {
-  background-image: url("../images/_DSC1998.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.box23 {
-  background-image: url("../images/_DSC8178.png");
-  background-size:cover;
-  background-position: center;
-  margin: 20px 50px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
 }
